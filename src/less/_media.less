@@ -1,0 +1,84 @@
+@media (hover: hover) and (pointer: fine) {
+  .search-navigation__item:hover {
+    color: @primary;
+
+    & > button {
+      transform: translateX(50px);
+    }
+  }
+
+  .card:hover {
+    .card-img {
+      transform: scale(1.2)
+    }
+  }
+
+  .map-card-item:hover {
+    transform: scale(1.1);
+
+    .map-card-text {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .full-card__text {
+    margin: 8px 0;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 10px;
+  }
+
+  .navigation {
+    max-width: 250px
+  }
+
+  .card__block {
+    margin-right: 0;
+  }
+
+  .full-card__text {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 642px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 542px) {
+  .map-wrapper {
+    display: none;
+  }
+
+  .full-card__slider {
+    height: 250px;
+  }
+
+  .full-card__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation {
+    max-width: 200px
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'HKG';
+  src: url("../fonts/HKGrotesk-Regular.woff2") format('truetype');
+  font-style: normal;
+  font-feature-settings: 'locl' 0;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HKG-medium';
+  src: url("../fonts/OpenSans-Regular.woff2") format('truetype');
+  font-style: normal;
+  font-feature-settings: 'locl' 0;
+  font-display: swap;
+}
+
+.HKG(@weight: bold) {
+  font-family: 'HKG', sans-serif;
+  font-weight: @weight;
+  font-feature-settings: 'locl' 0;
+}
+
+.OpenSans(@weight: 100) {
+  font-family: 'HKG', sans-serif;
+  font-weight: @weight;
+  font-feature-settings: 'locl' 0;
+}

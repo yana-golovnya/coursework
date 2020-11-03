@@ -1,0 +1,56 @@
+@import "../_vars";
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background-color: rgba(47, 77, 138, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+
+  &-content {
+    width: 310px;
+    background-color: black;
+    padding: 20px 20px;
+    border-radius: 4px;
+  }
+
+  &-button {
+    background-color: @primary;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+
+    &__search {
+      margin-top: 20px;
+    }
+  }
+
+  &.modal-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .3s;
+  }
+}
+
+.close {
+  font-size: 36px;
+  color: @primary;
+}
+
+.search {
+  &-input {
+    border-radius: 15px;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+  }
+}

@@ -1,0 +1,48 @@
+.map {
+  & > img {
+    width: 100%;
+  }
+
+  &-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  &-mark {
+    position: absolute;
+    width: 4%;
+    height: 4%;
+
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+#map-mark-1 {
+  top: 37%;
+  left: 22%;
+}
+
+#map-mark-2 {
+  top: 30%;
+  left: 60%;
+}
+
+#map-mark-3 {
+  top: 70%;
+  left: 30%;
+}
+
+.map-card-item {
+  position: absolute;
+  z-index: 8;
+  top: 5px;
+  left: 5px;
+  background-color: @primary;
+  max-width: 300px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .2s;
+}
