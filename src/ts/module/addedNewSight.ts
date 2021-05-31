@@ -27,6 +27,7 @@ export function addedNewSight(): void {
     const inputInfo = document.querySelector('.input-info') as HTMLInputElement;
     const inputStreet = document.querySelector('.input-street') as HTMLInputElement;
     const inputNameArr = document.querySelector('.input-nameArr') as HTMLInputElement;
+    const inputMapSrc = document.querySelector('.input-mapSrc') as HTMLInputElement;
     const inputRating = document.querySelector('.input-rating') as HTMLInputElement;
     const inputImg: NodeListOf<HTMLInputElement> = document.querySelectorAll('.input-img');
     const arrImg = [];
@@ -50,6 +51,7 @@ export function addedNewSight(): void {
         street: inputStreet.value,
         rating: +inputRating.value > 5 ? 5 : +inputRating.value,
         imgArr: [...arrImg.filter(i => i)],
+        mapSrc: inputMapSrc.value,
         feedback: []
       };
 

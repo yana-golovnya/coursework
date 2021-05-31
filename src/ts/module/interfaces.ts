@@ -21,6 +21,7 @@ export interface IAddedSights {
   title: string
   feedback?: Array<IFeedback>
   street: string
+  mapSrc: string
 }
 
 export interface IAddedSightsId extends IAddedSights {

@@ -183,6 +183,23 @@
   </div>
 </div>
 
+<script>
+
+  function ocMap() {
+    let content = document.getElementById('content-all');
+    let map = document.getElementById('content-map');
+    if (map.style.display === 'none') {
+      content.style.display = 'none';
+      map.style.display = 'flex';
+      document.getElementsByClassName('back-to-info')[0].style.visibility = 'visible';
+    }
+    else {
+      content.style.display = 'flex';
+      map.style.display = 'none';
+      document.getElementsByClassName('back-to-info')[0].style.visibility = 'hidden';
+    }
+  }
+</script>
 
 </body>
 </html>
