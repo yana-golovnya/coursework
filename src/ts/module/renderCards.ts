@@ -50,7 +50,7 @@ export function createFullCard(props: IAddedSights): HTMLDivElement {
           </div>
         </div>
         <div id="content-map" class="full-card__wrapper" style="display: none; flex-basis: 100%;">
-          <iframe src="${props.mapSrc}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="${props.mapSrc == undefined ? props.MapSrc : props.mapSrc}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div id="content-all" class="full-card__wrapper">
           <div class="full-card__slider">
